@@ -2,14 +2,14 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import ErrorPage from '../pages/error-page'
 import GithubUser from '../pages/github-user'
-import GithubUserDetail from '../pages/user-detail'
+import GithubUserDetail from '../pages/github-user-detail'
+import GithubUserRepoDetail from '../pages/github-user-repo-detail'
 import GithubUserRepos from '../pages/github-user-repos'
 import GithubUserSearch from '../pages/github-user-search'
 import loaderGithubUser from './loaders/loader-github-user-'
 import loaderGithubUserDetail from './loaders/loader-github-user-detail'
+import loaderGithubUserRepoDetail from './loaders/loader-github-user-repo-detail'
 import loaderGithubUserRepos from './loaders/loader-github-user-repos'
-import loaderUserRepoDetail from './loaders/loader-github-user-repo-detail'
-import UserRepoDetail from '../pages/user-repo-detail'
 
 const router = createBrowserRouter([
   {
@@ -33,8 +33,8 @@ const router = createBrowserRouter([
             path: '/user/:username/repos'
           },
           {
-            element: <UserRepoDetail />,
-            loader: loaderUserRepoDetail,
+            element: <GithubUserRepoDetail />,
+            loader: loaderGithubUserRepoDetail,
             path: '/user/:username/repos/:repo'
           }
         ]

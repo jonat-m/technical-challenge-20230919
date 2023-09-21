@@ -1,12 +1,8 @@
-import {
-  NavLink,
-  useLoaderData,
-  useNavigate,
-  useParams
-} from 'react-router-dom'
+import { useLoaderData, useNavigate } from 'react-router-dom'
+
 import { GitHubRepoDetail } from '../types/github-user-repo-detail'
 
-function UserRepoDetail() {
+function GithubUserRepoDetail() {
   const userRepoDetail = useLoaderData() as GitHubRepoDetail
   const navigate = useNavigate()
   const handleClick = () => {
@@ -41,4 +37,4 @@ function UserRepoDetail() {
   )
 }
 
-export default UserRepoDetail
+export default GithubUserRepoDetail

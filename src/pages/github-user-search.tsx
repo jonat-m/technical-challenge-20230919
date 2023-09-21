@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Outlet, useNavigate, useParams } from 'react-router-dom'
+
 import { RouteParams } from '../types/route-params'
 
 function GithubUserSearch() {

@@ -4,7 +4,7 @@ import fetchApi from '../../api'
 import { GitHubRepoDetail } from '../../types/github-user-repo-detail'
 import { RouteParams } from '../../types/route-params'
 
-async function loaderUserRepoDetail({
+async function loaderGithubUserRepoDetail({
   params
 }: LoaderFunctionArgs<RouteParams>) {
   const { username, repo } = params
@@ -14,4 +14,4 @@ async function loaderUserRepoDetail({
   return repoDetail
 }
 
-export default loaderUserRepoDetail
+export default loaderGithubUserRepoDetail

@@ -1,10 +1,11 @@
 import {
   Outlet,
-  useParams,
-  useNavigate,
+  useLoaderData,
   useLocation,
-  useLoaderData
+  useNavigate,
+  useParams
 } from 'react-router-dom'
+
 import { GitHubUser } from '../types/github-user'
 import { RouteParams } from '../types/route-params'
 
