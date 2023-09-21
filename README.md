@@ -65,7 +65,7 @@ O projeto utiliza as seguintes tecnologias:
 
 ## Exemplos e Demonstração
 
-Você pode encontrar uma demonstração do projeto em [MINHA_URL](MINHA_URL).
+Você pode encontrar uma demonstração do projeto em [http://jonathan-ma.surge.sh/](http://jonathan-ma.surge.sh/).
 
 ## Contato
 
