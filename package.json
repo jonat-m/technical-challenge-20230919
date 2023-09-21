@@ -1,6 +1,6 @@
 {
   "name": "technical-challenge-20230919",
-  "private": true,
+  "private": false,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
