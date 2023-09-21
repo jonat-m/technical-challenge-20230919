@@ -1,27 +1,76 @@
-# React + TypeScript + Vite
+# Desafio Técnico
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto referente ao desafio técnico feito em 21/09/2023.
 
-Currently, two official plugins are available:
+## Pre requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    Node
+    Npm ou Yarn
 
-## Expanding the ESLint configuration
+## Instruções de Instalação
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Baixe ou clone este repositório em seu ambiente de desenvolvimento.
+2. Acesse a pasta do projeto e instale as dependências executando um dos seguintes comandos:
+   ```javascript
+   npm install
+   ```
+   ou
+   ```javascript
+   yarn install
+   ```
+3. Se você utiliza um Editor com a extensão `Prettier`, o arquivo `.prettierrc` irá auxiliar na formatação do código.
 
-- Configure the top-level `parserOptions` property like this:
+## Instruções de Uso
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+Para iniciar o projeto localmente, utilize o seguinte comando:
+
+```javascript
+    npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+ou
+
+```javascript
+    yarn dev
+```
+
+Isso irá iniciar o servidor de desenvolvimento e a aplicação estará disponível em [http://localhost:3000/](http://localhost:3000/)
+
+## Estrutura do Projeto
+
+O projeto está organizado da seguinte forma:
+
+- `api`: Contém consultas para a API usando o fetch API.
+- `assets`: Conteúdo de mídia ou estático.
+- `pages`: Páginas referentes às rotas da aplicação.
+- `routes`: Configuração de rotas.
+- `types`: Principais tipos do TypeScript.
+
+##### Anotação:
+
+Estou utilizando de forma temporária um padrão de nomenclatura de arquivo em letra minuscula e separando a palavra com traços, acredito que facilita a leitura e busca.
+Exemplo: `Repositorio do usuário no github` ficaria `user-repository-on-github.tsx`
+
+## Tecnologias Utilizadas
+
+O projeto utiliza as seguintes tecnologias:
+
+- React
+- Bootstrap
+- React DOM
+- React Router DOM
+- ESLint
+- TypeScript
+- Vite com SWC
+
+## Exemplos e Demonstração
+
+Você pode encontrar uma demonstração do projeto em [MINHA_URL](MINHA_URL).
+
+## Contato
+
+email: jonathan.mauricenz@gmail.com
+
+## Licença
+
+Este projeto está sob a licença Mit
