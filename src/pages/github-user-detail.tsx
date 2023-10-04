@@ -6,7 +6,7 @@ function GithubUserDetail() {
   const userInfos = useLoaderData() as GitHubUser
 
   return (
-    <div className="card">
+    <div className="card" data-testid="github-user-detail-test">
       {userInfos.avatar_url && (
         <img
           alt={`${userInfos.login}'s avatar`}

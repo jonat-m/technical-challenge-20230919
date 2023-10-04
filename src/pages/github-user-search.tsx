@@ -33,6 +33,7 @@ function GithubUserSearch() {
         {params.username && (
           <button
             className="btn btn-link"
+            data-testid="button-go-back"
             onClick={() => {
               navigate('/')
             }}
@@ -45,6 +46,7 @@ function GithubUserSearch() {
       <div className="input-group">
         <input
           className={`form-control ${emptyFieldError ? 'is-invalid' : ''}`}
+          data-testid="github-user-search-field"
           onChange={e => setSearchTerm(e.target.value)}
           onKeyUp={handleKeyUp}
           placeholder="Pesquisa usuário do Github"
@@ -55,8 +57,9 @@ function GithubUserSearch() {
         <div className="input-group-append">
           <button
             className="btn btn-primary"
-            type="button"
+            data-testid="github-user-search-submit"
             onClick={handleClick}
+            type="button"
           >
             Buscar
           </button>

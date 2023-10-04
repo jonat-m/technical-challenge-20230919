@@ -3,7 +3,7 @@ import {
   useLoaderData,
   useLocation,
   useNavigate,
-  useParams
+  useParams,
 } from 'react-router-dom'
 
 import { GitHubUser } from '../types/github-user'
@@ -29,12 +29,16 @@ function GithubUser() {
   }
 
   if (!userInfo) {
-    return <div>Usuário inexistente</div>
+    return (
+      <div>
+        <div data-testid="github-user-not-found">Usuário inexistente</div>
+      </div>
+    )
   }
 
   return (
     <>
-      <div className="row align-items-stretch ">
+      <div className="row align-items-stretch" data-testid="github-user-test">
         <div className="col-md-6">
           <div className="card">
             <div className="card-body">
@@ -63,21 +67,23 @@ function GithubUser() {
       </div>
       <div className="container mt-5 d-flex justify-content-between">
         <button
-          type="button"
           className="btn btn-light"
+          data-testid="github-user-details-test"
           onClick={handleClickDetail}
+          type="button"
         >
           Ver os detalhes do usuário
         </button>
         <button
-          type="button"
           className="btn btn-light"
+          data-testid="github-user-repos-test"
           onClick={handleClickRepos}
+          type="button"
         >
           Ver a listagem dos repositórios
         </button>
       </div>
-      <div className="container py-5">
+      <div className="container py-5" data-testid="outlet-component">
         <Outlet />
       </div>
     </>

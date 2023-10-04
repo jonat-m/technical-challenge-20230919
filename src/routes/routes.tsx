@@ -25,22 +25,26 @@ const router = createBrowserRouter([
           {
             element: <GithubUserDetail />,
             loader: loaderGithubUserDetail,
-            path: '/user/:username/details'
+            path: '/user/:username/details',
           },
           {
             element: <GithubUserRepos />,
             loader: loaderGithubUserRepos,
-            path: '/user/:username/repos'
+            path: '/user/:username/repos',
           },
           {
             element: <GithubUserRepoDetail />,
             loader: loaderGithubUserRepoDetail,
-            path: '/user/:username/repos/:repo'
-          }
-        ]
-      }
-    ]
-  }
+            path: '/user/:username/repos/:repo',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    element: <ErrorPage />,
+    path: '/*',
+  },
 ])
 
 export default function Routes() {

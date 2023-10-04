@@ -12,7 +12,7 @@ export default function ErrorPage() {
   }
 
   return (
-    <div className="container">
+    <div className="container" data-testid="error-page-test">
       <div className="row justify-content-center mt-5">
         <div className="col-md-6 text-center">
           <h1 className="display-4">Oops!</h1>

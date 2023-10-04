@@ -18,7 +18,11 @@ function UserRepoListRender({ repoList }: { repoList: GitHubRepo[] }) {
       {repoList.map(repo => (
         <tr key={repo.id}>
           <td>
-            <NavLink to={repo.name} end>
+            <NavLink
+              data-testid="github-user-repos-list-item-test"
+              end
+              to={repo.name}
+            >
               {repo.name}
             </NavLink>
           </td>
@@ -41,10 +45,13 @@ function GithubUserRepos() {
 
   return (
     <>
-      <div className="container">
+      <div className="container" data-testid="github-user-repos-list-test">
         <h2 className="mt-5">Lista de Repositórios do GitHub</h2>
         <div className="table-responsive mt-4">
-          <table className="table table-striped">
+          <table
+            className="table table-striped"
+            data-testid="github-user-repos-list-table-test"
+          >
             <thead>
               <tr>
                 <th>Nome do Repositório</th>

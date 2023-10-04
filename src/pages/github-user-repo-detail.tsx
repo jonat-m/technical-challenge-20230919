@@ -9,7 +9,7 @@ function GithubUserRepoDetail() {
     navigate(-1)
   }
   return (
-    <div className="card">
+    <div className="card" data-testid="github-user-repo-detail-test">
       <div className="card-body">
         <h5 className="card-title">{userRepoDetail.name}</h5>
         <p className="card-text">{userRepoDetail.description}</p>
@@ -24,6 +24,7 @@ function GithubUserRepoDetail() {
             Retornar
           </button>
           <a
+            data-testid="github-user-repo-detail-link-test"
             href={userRepoDetail.html_url}
             className="btn btn-primary"
             target="_blank"
